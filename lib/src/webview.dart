@@ -467,6 +467,9 @@ class _PlatformCallbacksHandler implements WebViewPlatformCallbacksHandler {
       _widget.onProgress!(progress);
     }
   }
+  
+  @override
+  void onUrlChanged(String url){}
 
   void onWebResourceError(WebResourceError error) {
     if (_widget.onWebResourceError != null) {
